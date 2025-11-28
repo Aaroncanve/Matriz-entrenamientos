@@ -1,0 +1,80 @@
+<div class="app-container">
+  <h1>Matriz de entrenamientos por área y persona</h1>
+
+  <!-- Captura de información -->
+  <section class="section">
+    <h2>Capturar información</h2>
+    <p class="section-desc">
+      Agrega las áreas, las personas que trabajan en cada área y los entrenamientos que tiene cada persona.
+    </p>
+
+    <div class="form-grid">
+      <div class="field-group">
+        <label for="areaInput">Área</label>
+        <small>Ejemplo: IT, Producción, Calidad</small>
+        <input id="areaInput" type="text" placeholder="IT">
+      </div>
+
+      <div class="field-group">
+        <label for="personInput">Persona</label>
+        <small>Nombre de la persona en esa área</small>
+        <input id="personInput" type="text" placeholder="Juan Pérez">
+      </div>
+
+      <div class="field-group">
+        <label for="trainingInput">Entrenamientos de esa persona</label>
+        <small>Separados por coma, ejemplo: FORM-343, IND-001, SEG-010</small>
+        <input
+          id="trainingInput"
+          type="text"
+          placeholder="FORM-343, IND-001, SEG-010"
+        >
+      </div>
+
+      <div class="field-group field-button">
+        <button id="addRecordBtn">Agregar registro</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exploración -->
+  <section class="section">
+    <h2>Explorar matriz</h2>
+    <p class="section-desc">
+      Selecciona un área y luego una persona para ver los entrenamientos con los que cuenta.
+    </p>
+
+    <div class="explore-grid">
+      <div class="field-group">
+        <label for="areaSelect">Área</label>
+        <select id="areaSelect">
+          <option value="">Selecciona un área</option>
+        </select>
+      </div>
+
+      <div class="field-group">
+        <label for="personSelect">Persona</label>
+        <select id="personSelect" disabled>
+          <option value="">Selecciona una persona</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="trainings-panel">
+      <h3 id="trainingsTitle">Entrenamientos</h3>
+      <p id="trainingsEmpty" class="empty-text">
+        No hay información seleccionada. Elige un área y una persona.
+      </p>
+      <div id="trainingsList" class="tag-list"></div>
+    </div>
+  </section>
+
+  <!-- Resumen "técnico" -->
+  <section class="section">
+    <h2>Resumen de la matriz</h2>
+    <p class="section-desc">
+      Vista en formato estructurado, útil para documentación o para llevarlo a otro sistema.
+    </p>
+    <textarea id="summaryOutput" readonly></textarea>
+  </section>
+</div>
