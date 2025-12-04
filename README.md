@@ -126,4 +126,4 @@ Para más detalles, revisar la sección Contribución en la Wiki.
 
 ## Autor
 
-Desarrollado por Aaron Canve como parte del proyecto académico de gestión y documentación de código.
+Desarrollado por Aaron Cantu como parte del proyecto académico.
